@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 2em;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  text-decoration: none;
+  color: steelblue;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  height: 2em;
+}
+.cell {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background-color: white;
+  border: solid 1px grey;
+}
+
+.paletteContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#palette {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
