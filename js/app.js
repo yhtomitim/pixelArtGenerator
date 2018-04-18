@@ -31,7 +31,7 @@ function createCanvas() {
     for (let i = 0; i < canvasSize; i++) {
       const cells = document.createElement('div');
       cells.classList.add('cell');
-      cells.addEventListener('click', function () {
+      cells.addEventListener('click', () => {
         cells.style.backgroundColor = colorSelected;
       });
       row.appendChild(cells);
@@ -87,6 +87,8 @@ function createInput() {
 
 createInput();
 
+
+//used in the submit eventlistener
 function addToArray() {
   event.preventDefault();
   let theColor = document.querySelector('.addColor').value;
@@ -94,12 +96,10 @@ function addToArray() {
   colorToAdd.push(theColor);
 
   // logic from newColorSwatch
-
   function newColorSwatch() {
     const createdPalette = document.createElement('span');
     createdPalette.id = 'palette';
     createdPalette.addEventListener('click', (event) => {
-      // colorSelected = event.target.style.selectedColor;
       colorSelected = event.target.style.backgroundColor;
     });
     return createdPalette;
