@@ -4,6 +4,17 @@
 
 The app provides a way to select from some pre-defined colors and click on empty "pixels" to change their background color to match the selected palette color. There is also an input field where you can add your own custom colors to the palette. There is a link to W3School's CSS color list for reference.
 
+### Build Setup
+
+```bash
+
+#install lite-server
+
+$ npm i -g lite-server
+
+#run site locally inside of repo
+
+$ lite-server
 
 ### Future Plans
 
