@@ -15,6 +15,7 @@ $ npm i -g lite-server
 #run site locally inside of repo
 
 $ lite-server
+```
 
 ### Future Plans
 
